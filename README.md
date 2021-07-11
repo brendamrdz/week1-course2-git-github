@@ -60,7 +60,14 @@ $ git branch -a
 $ git branch -d <branch_name>
 ```
 **git pull**
-To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.
+To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.It is a combination of git fetch which fetches the recent commits in the local repository and git merge, which will merge the branch from a remote to a local branch.
+
+**git push** command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub. The command used for pushing to GitHub is given below.
+```bash
+git push 'remote_name' 'branch_name'
+```
+
+**gitk** git graphical interface
 ## git config
 The git config command changes the configuration options in your Git installation.
 Two important settings are user.name and user.email. These values set what email address and name commits will be from on a local computer.
@@ -109,3 +116,14 @@ repository settings -> Collaborations -> Add user's public email or user name
 
 ## GitHub fork
 A GitHub fork is a copy of a repository (repo) that sits in your account rather than the account from which you forked the data from. Once you have forked a repo, you own your forked copy. This means that you can edit the contents of your forked repository without impacting the parent repo.
+
+## git merge
+The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
+Whether branches are created for testing, bug fixes, or other reasons, merging commits changes to another location. 
+<br><br><img src="https://user-images.githubusercontent.com/26840321/125213307-80833480-e277-11eb-8d45-a27386cfd255.png" alt="alt text" width="40%" height="auto"><br><br>
+Merge the master branch into the feature branch using the checkout and merge commands.
+
+```bash
+$ git checkout feature
+$ git merge master
+```
