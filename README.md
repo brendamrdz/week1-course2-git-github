@@ -91,5 +91,14 @@ Instead of a single master branch, it is better to use two or more branches to r
   - **git reset --hard** Deletes everything, absolutely everything.
  - **git reset head** This is the command to remove files from the staging area. Not to delete them or anything, just so that the latest changes to these files are not sent to the last commit unless we change our mind.
 
-  ## Configurar SSH en local
+  ## Connecting to GitHub with SSH
   
+Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
+  <br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/github-ssh.JPG?raw=true" alt="alt text" width="60%" height="auto"><br><br>
+Check the complete documentation in the following [link](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+
+## Github branches managment
+**git show-branch --all**
+**gitk**
+### Set Github repository permissions
+repository settings -> Collaborations -> Add user's public email or user name
