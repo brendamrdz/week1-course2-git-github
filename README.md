@@ -109,6 +109,17 @@ Instead of a single master branch, it is better to use two or more branches to r
   - **git reset --hard** Deletes everything, absolutely everything.
  - **git reset head** This is the command to remove files from the staging area. Not to delete them or anything, just so that the latest changes to these files are not sent to the last commit unless we change our mind.
 
+## git merge
+The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
+Whether branches are created for testing, bug fixes, or other reasons, merging commits changes to another location. 
+<br><br><img src="https://user-images.githubusercontent.com/26840321/125213307-80833480-e277-11eb-8d45-a27386cfd255.png" alt="alt text" width="40%" height="auto"><br><br>
+Merge the master branch into the feature branch using the checkout and merge commands.
+
+```bash
+$ git checkout feature
+$ git merge master
+```
+
   ## Connecting to GitHub with SSH
   
 Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
@@ -120,13 +131,4 @@ repository settings -> Collaborations -> Add user's public email or user name
 ## GitHub fork
 A GitHub fork is a copy of a repository (repo) that sits in your account rather than the account from which you forked the data from. Once you have forked a repo, you own your forked copy. This means that you can edit the contents of your forked repository without impacting the parent repo.
 
-## git merge
-The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.
-Whether branches are created for testing, bug fixes, or other reasons, merging commits changes to another location. 
-<br><br><img src="https://user-images.githubusercontent.com/26840321/125213307-80833480-e277-11eb-8d45-a27386cfd255.png" alt="alt text" width="40%" height="auto"><br><br>
-Merge the master branch into the feature branch using the checkout and merge commands.
 
-```bash
-$ git checkout feature
-$ git merge master
-```
