@@ -1,4 +1,4 @@
-# git
+# Git
 
 
 ## Install (Debian/Ubuntu)
@@ -50,6 +50,8 @@ Date: Mon Oct 1 12:56:29 2016 -0600
 **git resset**
 git reset [hash] --hard
 **git log --stat**
+**git branch**
+**git fetch + gitmerge = git pull**
 
 ## git config
 The git config command changes the configuration options in your Git installation.
@@ -72,23 +74,22 @@ A repository holds your actual committed files. Git stores all this information 
 
 ## How Git Flow Works
 <br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/git-workflow.png?raw=true" alt="alt text" width="60%" height="auto"><br><br>
-Instead of a single master branch, this workflow uses two branches to record the history of the project. The master branch stores the official release history, and the develop branch serves as an integration branch for features. It’s also convenient to tag all commits in the master branch with a version number.
+Instead of a single master branch, it is better to use two or more branches to record the history of the project. The master branch stores the official release history, the develop branch serves as an integration branch for features. It’s also convenient to tag all commits in the master branch with a version number.
 
 ## Git reset vs Git rm
-  Git reset vs git remove
-  git rm: Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones.
-  Esto quiere decir que si necesitamos recuperar el archivo solo debemos "viajar en el tiempo" y recuperar el ultimo commit antes de borrar el archivo en cuestion
-  Flags
-  git rm --cached: Elimina los archivos del area de staging y del proximo commit pero los mantiene en nuestro disco duro.
+### git rm
+  This command helps us to delete files from Git without removing their history from the versioning system.
+  This means that if we need to recover the file we just need to "time travel" and retrieve the last commit before deleting the file in question.
+  #### Flags
+  - **git rm --cached** Removes the files from the staging area and the next commit but keeps them on our hard drive.
   
-  git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guardara todo, por lo que podemos acceder al registro de la existencia de los archivos (debemos usar comandos avanzados)
-  Git reset
-  Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, pasear y volver. con git reset volvemos al pasado sin la posibilidad de volver al futuro.
-  git reset --soft: Borramos todo el historial y los registros de Git pero  guardamos los cambios que tengamos en staging, asi podemos aplicar las ultimas actualizaciones a un nuevo commit
-  
-  
-  git reset --hard Borra todo, abosultamente todo.
-  
-  IMPORTANTE
-  git reset head: Este es el comando para sacar archivos del area de staging. No para borrarlos ni nada de eso, solo para que los ultimos cambios de estos archivos no se envien al ultimo commit a menos que cambiemos de opinion
+  - **git rm --force** Removes the files from Git and from the hard disk. Git will always save everything, so we can access the log of the existence of the files (we must use advanced commands)
+### git reset
+  This command helps us to go back in time. But not like git checkout which lets us go, look, walk and come back. With git reset we go back to the past without the possibility to go back to the future.
+  #### Flags
+  - **git reset --soft** We erase all history and Git logs but save the changes we have in staging, so we can apply the latest updates to a new commit.
+  - **git reset --hard** Deletes everything, absolutely everything.
+ - **git reset head** This is the command to remove files from the staging area. Not to delete them or anything, just so that the latest changes to these files are not sent to the last commit unless we change our mind.
+
+  ## Configurar SSH en local
   
