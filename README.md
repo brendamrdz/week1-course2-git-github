@@ -44,15 +44,23 @@ commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw
 Author: Robert Jones <robertj@gmail.com>
 Date: Mon Oct 1 12:56:29 2016 -0600
 ```
-**git checkout**
-**git show FileName.txt**
-**git diff**
-**git resset**
-git reset [hash] --hard
-**git log --stat**
-**git branch**
-**git fetch + gitmerge = git pull**
+**git checkout** To start working in a different branch, use git checkout to switch branches.
 
+**git diff** command shows the differences between the files in two commits or between your current repository and a previous commit. This command displays changes denotes by headers and metadata for the files that have changed.
+
+**git branch**
+```bash
+# Create a new branch
+$ git branch <branch_name>
+
+# List all remote or local branches
+$ git branch -a
+
+# Delete a branch
+$ git branch -d <branch_name>
+```
+**git pull**
+To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.
 ## git config
 The git config command changes the configuration options in your Git installation.
 Two important settings are user.name and user.email. These values set what email address and name commits will be from on a local computer.
@@ -96,9 +104,8 @@ Instead of a single master branch, it is better to use two or more branches to r
 Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
   <br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/github-ssh.JPG?raw=true" alt="alt text" width="60%" height="auto"><br><br>
 Check the complete documentation in the following [link](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-
-## Github branches managment
-**git show-branch --all**
-**gitk**
 ### Set Github repository permissions
 repository settings -> Collaborations -> Add user's public email or user name
+
+## GitHub fork
+A GitHub fork is a copy of a repository (repo) that sits in your account rather than the account from which you forked the data from. Once you have forked a repo, you own your forked copy. This means that you can edit the contents of your forked repository without impacting the parent repo.
