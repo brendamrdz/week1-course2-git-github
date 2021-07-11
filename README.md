@@ -1,63 +1,63 @@
-# week1-course2-git-github
+# git
 
-#Instalar git en linux
-##Antes de instalar actualizar el sistema
+
+## Install (Debian/Ubuntu)
+Updates your Ubuntu system
+```bash
 sudo apt-get update
 sudo apt-get upgrade
+```
+Install git for the latest stable version for your release of Debian/Ubuntu
+```bash
+# sudo apt-get install git
+```
+## Common Git Commands
+**git init** turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
+```bash
+$ git init
+```
+**git add** adds files in the to the staging area for Git. There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.
+```bash
+$ git add FileName.txt
+```
+```bash
+# adds all files at once in a repository.
+$ git add .
+```
 
-##Instalar git
-sudo apt get install
+**git commit** saves changes made to files in a local repository.
+It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.
+```bash
+$ git commit -m "commit message"
+```
+**git status** will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. 
+```bash
+$ git status
+```
+**git log** shows the chronological commit history for a repository.
+```bash
+$ git log FileName.txt
+```
+When you run this command you get an output like this:
+```bash
+commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw
+Author: Robert Jones <robertj@gmail.com>
+Date: Mon Oct 1 12:56:29 2016 -0600
+```
+**git checkout**
+**git show FileName.txt**
+**git diff**
 
-#Comenzar en una carpeta un repositorio
-git init
+## git config
+The git config command changes the configuration options in your Git installation.
+Two important settings are user.name and user.email. These values set what email address and name commits will be from on a local computer.
+```bash
+$ git config --global user.name "Brenda M"
+$ git config --global user.email "email@email.com"
+```
 
-#Añadir archivo al repositorio
-git add FileName.txt
+<img src="">
 
-# Enviar los ultimos cambios del archivo a la base de datos
-git commit -m "Mensaje del commit"
-
-Para guardar los cambios hechos a un archivo del repositorio
-git add .
-git commit -m "Mensaje referente a los cambios realizados"
-git status
-git show
-git log FileName.txt
-git push
-
-Comandos git
-git init -> Comienza un repositorio
-git status -> Estatus del repositorio
-git add FileName.txt -> agregar un archivo al repositorio
-
-CONFIGURAR GIT
-git config -> Muestra todo
-
-git config --list -> Configuración por defecto y las que faltan
-git config --list --show-origin -> donde están las configuraciones guardadas
-
-Agregar en las configuraciones el nombre del usuario y el email:
-git config --global user.name "Brenda M"
-git config --global user.email "email@email.com"
-
-agregar todos los archivos a la vez en un repositorio git add.
-
-mostrar los commits hechos
-git log FileName.txt
-
-mostrar historia de un archivo (commits hechos)
-git show historia.txt
-
-git diff -> cambios en un archivo
-git diff 8934... 3289...
-se compara el codigo del commit de la versión vieja y el de la version nueva
-
-<imagenes>
-  git reset -> Borra todo lo que se ha hecho antes, volver a una version anterior
-  git reset 897889... hard
-  
-  git log  --stat -> cambios especificos de los archivos en el commit
-  git checkout -> cambiar de rama
   
   Git reset vs git remove
   git rm: Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones.
