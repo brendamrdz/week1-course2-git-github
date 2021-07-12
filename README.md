@@ -46,7 +46,7 @@ Date: Mon Oct 1 12:56:29 2016 -0600
 ```
 **git checkout** To start working in a different branch, use git checkout to switch branches.
 
-**git diff** command shows the differences between the files in two commits or between your current repository and a previous commit. This command displays changes denotes by headers and metadata for the files that have changed.
+**git diff** command shows the differences between the files in two commits or between your current repository and a previous commit. 
 ```bash
 $ git diff [id old version] [id new version]
 ```
