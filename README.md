@@ -124,7 +124,7 @@ $ git merge master
   
 Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
   <br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/github-ssh.JPG?raw=true" alt="alt text" width="60%" height="auto"><br><br>
-Check the complete documentation in the following [link](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+Check the official documentation in the following [link](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 ### Set Github repository permissions
 repository settings -> Collaborations -> Add user's public email or user name
 
