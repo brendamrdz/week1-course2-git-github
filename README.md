@@ -23,6 +23,22 @@ It is a free and open-source version control system used to handle small to very
 - There is regular communication between the developers
 <img src="https://user-images.githubusercontent.com/26840321/126888848-3c68a08b-9adc-4970-9b42-6ba0f7094fb4.png" alt="alt text" width="60%" height="auto"><br><br>
 
+## Git Workflow<br><br>
+<img src="https://user-images.githubusercontent.com/26840321/125209930-0dbb8e80-e262-11eb-838d-ee8b252bc8c2.png" alt="alt text" width="60%" height="auto"><br><br>
+**Working Directory**
+This simply refers to the current state of files and folders inside your file system. At this point, Git doesn’t track these files.
+
+**Staging Area**
+Before saving any file to a repository, you have to place it in a staging area. It’s like a temporary location for your files and folders before commit. You can easily add or remove files from a staging area. 
+
+**Repository**
+A repository holds your actual committed files. Git stores all this information inside a hidden folder called .git. When you commit something, whatever is inside your staging area is permanently saved in a repository.
+
+## How Git Flow Works
+<br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/git-workflow.png?raw=true" alt="alt text" width="60%" height="auto"><br><br>
+Instead of a single master branch, it is better to use two or more branches to record the history of the project. The master branch stores the official release history, the develop branch serves as an integration branch for features. It’s also convenient to tag all commits in the master branch with a version number.
+
+
 ## Common Git Commands
 **git init** turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
 ```bash
@@ -90,21 +106,6 @@ Two important settings are user.name and user.email. These values set what email
 $ git config --global user.name "Brenda M"
 $ git config --global user.email "email@email.com"
 ```
-
-## Working Directory, Staging Area, and Repository<br><br>
-<img src="https://user-images.githubusercontent.com/26840321/125209930-0dbb8e80-e262-11eb-838d-ee8b252bc8c2.png" alt="alt text" width="60%" height="auto"><br><br>
-**Working Directory**
-This simply refers to the current state of files and folders inside your file system. At this point, Git doesn’t track these files.
-
-**Staging Area**
-Before saving any file to a repository, you have to place it in a staging area. It’s like a temporary location for your files and folders before commit. You can easily add or remove files from a staging area. 
-
-**Repository**
-A repository holds your actual committed files. Git stores all this information inside a hidden folder called .git. When you commit something, whatever is inside your staging area is permanently saved in a repository.
-
-## How Git Flow Works
-<br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/git-workflow.png?raw=true" alt="alt text" width="60%" height="auto"><br><br>
-Instead of a single master branch, it is better to use two or more branches to record the history of the project. The master branch stores the official release history, the develop branch serves as an integration branch for features. It’s also convenient to tag all commits in the master branch with a version number.
 
 ## Git reset vs Git rm
 ### git rm
