@@ -1,16 +1,8 @@
 # Git
 
 
-## Install (Debian/Ubuntu)
-Updates your Ubuntu system
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-```
-Install git for the latest stable version for your release of Debian/Ubuntu
-```bash
-# sudo apt-get install git
-```
+## What is Git?
+It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development. Linus Torvalds created Git in 2005 for the development of the Linux kernel. 
 ## Common Git Commands
 **git init** turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
 ```bash
