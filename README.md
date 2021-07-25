@@ -23,6 +23,13 @@ It is a free and open-source version control system used to handle small to very
 - There is regular communication between the developers
 <img src="https://user-images.githubusercontent.com/26840321/126888848-3c68a08b-9adc-4970-9b42-6ba0f7094fb4.png" alt="alt text" width="60%" height="auto"><br><br>
 
+## What is GitHub?
+GitHub is a Git repository hosting service that provides a web-based graphical interface. It is the world’s largest coding community. Putting a code or a project into GitHub brings it increased, widespread exposure. Programmers can find source codes in many different languages and use the command-line interface, Git, to make and keep track of any changes.
+
+GitHub helps every team member work together on a project from any location while facilitating collaboration. You can also review previous versions created at an earlier point in time.
+<br><br><img src="https://user-images.githubusercontent.com/26840321/126890071-b53cf1e0-88c5-434a-b5bf-a87e057a6e67.png" alt="alt text" width="20%" height="auto"><br><br>
+
+
 ## Git Workflow<br><br>
 <img src="https://user-images.githubusercontent.com/26840321/125209930-0dbb8e80-e262-11eb-838d-ee8b252bc8c2.png" alt="alt text" width="60%" height="auto"><br><br>
 **Working Directory**
@@ -33,12 +40,6 @@ Before saving any file to a repository, you have to place it in a staging area. 
 
 **Repository**
 A repository holds your actual committed files. Git stores all this information inside a hidden folder called .git. When you commit something, whatever is inside your staging area is permanently saved in a repository.
-## What is GitHub?
-GitHub is a Git repository hosting service that provides a web-based graphical interface. It is the world’s largest coding community. Putting a code or a project into GitHub brings it increased, widespread exposure. Programmers can find source codes in many different languages and use the command-line interface, Git, to make and keep track of any changes.
-
-GitHub helps every team member work together on a project from any location while facilitating collaboration. You can also review previous versions created at an earlier point in time.
-<br><br><img src="https://user-images.githubusercontent.com/26840321/126890071-b53cf1e0-88c5-434a-b5bf-a87e057a6e67.png" alt="alt text" width="60%" height="auto"><br><br>
-
 
 ## How Git Flow Works
 <br><br><img src="https://github.com/brendamrdz/week1-course2-git-github/blob/main/images/git-workflow.png?raw=true" alt="alt text" width="60%" height="auto"><br><br>
