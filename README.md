@@ -1,8 +1,28 @@
 # Git
+## General info
+### What is Version Control?
+Version control is the method used for incrementing, tracking, and recording changes in documents or files that occur over time in a systematic manner. Versioning organizes the history of changes in a logical order, and allows for review or version rollbacks if needed.
 
+#### Version Control System
+Version control is a system that allows the software team to manage changes to the source code over time. This software tool makes it easier for developers to collaborate on different projects separating their tasks through branches. It also gives the possibility to turn back to earlier versions for comparing and fixing the mistakes if needed.
+##### Benefits of version control systems:
+- **Long-term change history**<br>
+The changes made by developers, including the creating, modification, and deletion of files over the years, can be seen in history. It will allow going back to the previous version for analyzing bugs and fixing problems.<br>
 
+- **Branching and merging**<br>
+Branching helps work in an independent manner and not interfere with each other’s work. Merging brings the works together and allows seeing if there are conflicts between those works.<br>
+
+- **Traceability**<br>
+Ability to trace each change and connect it to project management and bug tracking software, as well as to annotate each change with a message describing the purpose of the change.<br>
 ## What is Git?
 It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development. Linus Torvalds created Git in 2005 for the development of the Linux kernel. 
+ 
+### Git scenario:
+- Every developer has an entire copy of the code on their local systems
+- Any changes made to the source code can be tracked by others
+- There is regular communication between the developers
+<img src="https://user-images.githubusercontent.com/26840321/126888848-3c68a08b-9adc-4970-9b42-6ba0f7094fb4.png" alt="alt text" width="60%" height="auto"><br><br>
+
 ## Common Git Commands
 **git init** turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
 ```bash
@@ -122,5 +142,8 @@ repository settings -> Collaborations -> Add user's public email or user name
 
 ## GitHub fork
 A GitHub fork is a copy of a repository (repo) that sits in your account rather than the account from which you forked the data from. Once you have forked a repo, you own your forked copy. This means that you can edit the contents of your forked repository without impacting the parent repo.
+
+## References
+https://www.w3docs.com/learn-git/version-control-system.html
 
 
