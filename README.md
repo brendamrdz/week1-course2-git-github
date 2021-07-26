@@ -21,7 +21,7 @@ It is a free and open-source version control system used to handle small to very
 - Every developer has an entire copy of the code on their local systems
 - Any changes made to the source code can be tracked by others
 - There is regular communication between the developers
-<center><img src="https://user-images.githubusercontent.com/26840321/126888848-3c68a08b-9adc-4970-9b42-6ba0f7094fb4.png" alt="alt text" width="60%" height="auto"><center><br><br>
+<img src="https://user-images.githubusercontent.com/26840321/126888848-3c68a08b-9adc-4970-9b42-6ba0f7094fb4.png" alt="alt text" width="60%" height="auto"><br><br>
 
 ## What is GitHub?
 GitHub is a Git repository hosting service that provides a web-based graphical interface. It is the world’s largest coding community. Putting a code or a project into GitHub brings it increased, widespread exposure. Programmers can find source codes in many different languages and use the command-line interface, Git, to make and keep track of any changes.
